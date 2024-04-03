@@ -1,0 +1,75 @@
+
+ - Activation:relu, Learning Rate:0.1, Epoch:1000 	
+Training and validation errors: 0.4348, 0.4584
+
+ - Activation:relu, Learning Rate:0.1, Epoch:1500 	
+Training and validation errors: 0.3853, 0.3506
+
+ - Activation:relu, Learning Rate:0.1, Epoch:2250 	
+Training and validation errors: 0.4290, 0.4390
+
+-----------------------------------------------------
+
+ - Activation:relu, Learning Rate:0.01, Epoch:1000 	
+Training and validation errors: 0.4559, 0.4233
+
+ - Activation:relu, Learning Rate:0.01, Epoch:1500
+Training and validation errors: 0.3952, 0.3962
+
+ - Activation:relu, Learning Rate:0.01, Epoch:2250
+Training and validation errors: 0.3928, 0.3700
+
+-----------------------------------------------------
+
+ - Activation:relu, Learning Rate:0.001, Epoch:1000
+Training and validation errors: 0.7058, 0.5801
+
+ - Activation:relu, Learning Rate:0.001, Epoch:1500
+Training and validation errors: 0.6922, 0.5824
+
+ - Activation:relu, Learning Rate:0.001, Epoch:2250
+Training and validation errors: 0.5332, 0.5055
+
+//////////////////////////////////////////////////////
+
+ - Activation:tanh, Learning Rate:0.1, Epoch:1000
+Training and validation errors: 0.3700, 0.3847
+
+ - Activation:tanh, Learning Rate:0.1, Epoch:1500
+Training and validation errors: 0.3807, 0.3980
+
+ - Activation:tanh, Learning Rate:0.1, Epoch:2250
+Training and validation errors: 0.3562, 0.4054
+
+-----------------------------------------------------
+
+ - Activation:tanh, Learning Rate:0.01, Epoch:1000
+Training and validation errors: 0.3927, 0.3976
+
+ - Activation:tanh, Learning Rate:0.01, Epoch:1500
+Training and validation errors: 0.3799, 0.3856
+
+ - Activation:tanh, Learning Rate:0.01, Epoch:2250
+Training and validation errors: 0.3509, 0.3576
+
+-----------------------------------------------------
+
+ - Activation:tanh, Learning Rate:0.001, Epoch:1000
+Training and validation errors: 0.6892, 0.5732
+
+ - Activation:tanh, Learning Rate:0.001, Epoch:1500
+Training and validation errors: 0.6328, 0.5360
+
+ - Activation:tanh, Learning Rate:0.001, Epoch:2250
+Training and validation errors: 0.6136, 0.5399
+
+//////////////////////////////////////////////////////
+
+ - Activation:sigmoid, Learning Rate:0.1, Epoch:1000
+Training and validation errors: 0.4427, 0.4632
+
+ - Activation:sigmoid, Learning Rate:0.1, Epoch:1500
+Training and validation errors: 0.4062, 0.3987
+
+ - Activation:sigmoid, Learning Rate:0.1, Epoch:2250
+Training and validation errors: 0.4034, 0.4114
