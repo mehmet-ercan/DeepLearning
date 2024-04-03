@@ -73,3 +73,113 @@ Training and validation errors: 0.4062, 0.3987
 
  - Activation:sigmoid, Learning Rate:0.1, Epoch:2250
 Training and validation errors: 0.4034, 0.4114
+
+
+
+
+
+
+
+
+
+
+- Activation:relu, Learning Rate:0.1, Epoch:1000
+	Training and validation errors: 0.4189, 0.4102
+
+ - Activation:relu, Learning Rate:0.1, Epoch:1500
+	Training and validation errors: 0.4109, 0.4110
+
+ - Activation:relu, Learning Rate:0.1, Epoch:2250
+	Training and validation errors: 0.4475, 0.4262
+
+-----------------------------------------------------
+
+ - Activation:relu, Learning Rate:0.01, Epoch:1000
+	Training and validation errors: 0.4116, 0.4408
+
+ - Activation:relu, Learning Rate:0.01, Epoch:1500
+	Training and validation errors: 0.4276, 0.4470
+
+ - Activation:relu, Learning Rate:0.01, Epoch:2250
+	Training and validation errors: 0.4123, 0.4272
+
+-----------------------------------------------------
+
+ - Activation:relu, Learning Rate:0.001, Epoch:1000
+	Training and validation errors: 0.6761, 0.5218
+
+ - Activation:relu, Learning Rate:0.001, Epoch:1500
+	Training and validation errors: 0.6906, 0.5304
+
+ - Activation:relu, Learning Rate:0.001, Epoch:2250
+	Training and validation errors: 0.6286, 0.4886
+
+//////////////////////////////////////////////////////
+
+ - Activation:tanh, Learning Rate:0.1, Epoch:1000
+	Training and validation errors: 0.3740, 0.3865
+
+ - Activation:tanh, Learning Rate:0.1, Epoch:1500
+	Training and validation errors: 0.3797, 0.3562
+
+ - Activation:tanh, Learning Rate:0.1, Epoch:2250
+	Training and validation errors: 0.3644, 0.4170
+
+-----------------------------------------------------
+
+ - Activation:tanh, Learning Rate:0.01, Epoch:1000
+	Training and validation errors: 0.3934, 0.3621
+
+ - Activation:tanh, Learning Rate:0.01, Epoch:1500
+	Training and validation errors: 0.3652, 0.4034
+
+ - Activation:tanh, Learning Rate:0.01, Epoch:2250
+	Training and validation errors: 0.3831, 0.4033
+
+-----------------------------------------------------
+
+ - Activation:tanh, Learning Rate:0.001, Epoch:1000
+	Training and validation errors: 0.6706, 0.4939
+
+ - Activation:tanh, Learning Rate:0.001, Epoch:1500
+	Training and validation errors: 0.6033, 0.5012
+
+ - Activation:tanh, Learning Rate:0.001, Epoch:2250
+	Training and validation errors: 0.6104, 0.5130
+
+//////////////////////////////////////////////////////
+
+ - Activation:sigmoid, Learning Rate:0.1, Epoch:1000
+	Training and validation errors: 0.4583, 0.4584
+
+ - Activation:sigmoid, Learning Rate:0.1, Epoch:1500
+	Training and validation errors: 0.4607, 0.4835
+
+ - Activation:sigmoid, Learning Rate:0.1, Epoch:2250
+	Training and validation errors: 0.3817, 0.4198
+
+-----------------------------------------------------
+
+ - Activation:sigmoid, Learning Rate:0.01, Epoch:1000
+	Training and validation errors: 0.7820, 0.6317
+
+ - Activation:sigmoid, Learning Rate:0.01, Epoch:1500
+	Training and validation errors: 0.7002, 0.5304
+
+ - Activation:sigmoid, Learning Rate:0.01, Epoch:2250
+	Training and validation errors: 0.7560, 0.5918
+
+-----------------------------------------------------
+
+ - Activation:sigmoid, Learning Rate:0.001, Epoch:1000
+	Training and validation errors: 1.3462, 1.1671
+
+ - Activation:sigmoid, Learning Rate:0.001, Epoch:1500
+	Training and validation errors: 1.3464, 1.1625
+
+ - Activation:sigmoid, Learning Rate:0.001, Epoch:2250
+	Training and validation errors: 1.2918, 1.1248
+
+//////////////////////////////////////////////////////
+
+Best parameters: {'mdoel': <Sequential name=sequential_41, built=True>, 'activation': 'tanh', 'learning_rate': 0.1, 'epoch': 1500}
