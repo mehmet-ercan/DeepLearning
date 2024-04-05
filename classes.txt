@@ -1,0 +1,8 @@
+ellipse
+rect
+poly3
+poly3
+poly6
+poly7
+star5
+star8
