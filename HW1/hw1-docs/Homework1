@@ -1,0 +1,39 @@
+Training a deep feed forward network for multidimensional regression.
+
+Assume that you are given a polynomial with multiple (8) inputs and multiple outputs (6) of the form: (𝑦1 , 𝑦2 , … , 𝑦6 ) = Ρ(𝑥1 , 𝑥2 , … , 𝑥8 ),
+where the exact polynomials are:
+
+𝑦1 = 𝑥1 𝑥2 𝑥3 + 1. 2𝑥1 𝑥5 − 0.1𝑥6 𝑥7 𝑥8 − 2𝑥12 𝑥8 + 𝑥5
+𝑦2 = 𝑥1 𝑥5 𝑥6 − 𝑥3 𝑥4 − 3𝑥2 𝑥3 + 2𝑥22 𝑥4 − 2𝑥7 𝑥8 − 1
+𝑦3 = 𝑥32 − 𝑥5 𝑥7 − 3𝑥1 𝑥4 𝑥6 − 𝑥12 𝑥2 𝑥4 − 1
+𝑦4 = −𝑥63 + 2𝑥1 𝑥3 𝑥8 − 𝑥1 𝑥4 𝑥7 − 2𝑥52 𝑥2 𝑥4 − 𝑥8
+𝑦5 = 𝑥12 𝑥5 − 3𝑥3 𝑥4 𝑥8 + 𝑥1 𝑥2 𝑥4 − 3𝑥6 + 𝑥12 𝑥7 + 2
+𝑦6 = 𝑥12 𝑥3 𝑥6 − 𝑥3 𝑥5 𝑥7 + 𝑥3 𝑥4 + 2.2𝑥4 + 𝑥22 𝑥3 − 1.1
+
+Model a FFNN such that: (𝑦1 , 𝑦2 , … , 𝑦6 ) = FFNN(𝑥1 , 𝑥2 , … , 𝑥8 )
+
+Training and validation data:
+1.Given the polynomials, generate 𝑁𝑡 instances of data pairs of the form: {(𝑥1𝑡 , 𝑥2𝑡 , … , 𝑥8𝑡 ), (𝑦1𝑡 , 𝑦2𝑡 , … , 𝑦6𝑡 )}.
+2.When needed, add some noise to the training data from a normal distribution with mean 𝜇 and standard deviation 𝜎 such that the training data becomes: {(𝑥1𝑡 , 𝑥2𝑡 , … , 𝑥8𝑡 ), (𝑦1𝑡 + 𝑁(𝜇, 𝜎), 𝑦2𝑡 + 𝑁(𝜇, 𝜎), … , 𝑦6𝑡 + 𝑁(𝜇, 𝜎))}.
+3.Similarly, create an additional 𝑁𝑣 instances {(𝑥1𝑣 , 𝑥2𝑣 , … , 𝑥8𝑣 ), (𝑦1𝑣 , 𝑦2𝑣 , … , 𝑦6𝑣 )} for validation of the trained model.
+
+Model training:
+1.Choose 𝑁𝑡 to be 1000.
+2.In your training data add some noise to 𝑦𝑖 ’s from a normal distribution with 𝜇 = 0.0 and 𝜎 = 0.001.
+3.Build a feed forward network with exactly 3 hidden layers:
+    a.Each layer should include exactly 6 nodes in the beginning.
+    b.Use a combination of activation functions in these layers (use the same activation for each node at a given layer).
+4.Define your loss function:
+    a.Use MSE for loss function.
+5.Train your algorithm with SGD.
+    a.Use appropriate learning rates and the number of epochs.
+    b.Report the training and validation errors.
+6.Repeat Steps 2-4 with another set of activation functions (3 different combinations), learning rates (3 different schemes) and number of epochs (after finding a reasonable number of epochs in the first trial, increase by 50% for 2 times).
+7.Choose your best parameters after Step
+8.Add new nodes at a time to each hidden layer:
+    a.Start from the first hidden layer, add two nodes, train, and record results.
+    b.Move to the second hidden layer, add two nodes, train, and record results.
+    c.Move to the third hidden layer, add two nodes, train, and record results.
+    d.Repeat Step 8 until bias and variance curve is drawn (see Figure 1 for a fictitious example from the first lecture).
+9.Increase 𝑁𝑡 by 10% and repeat Step 8.
+10.Report your all results.
