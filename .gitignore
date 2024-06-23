@@ -10,6 +10,7 @@ __pycache__/
 # Intellij
 ######################
 .idea/
+*.keras/
 *.iml
 *.iws
 *.ipr
@@ -70,7 +71,7 @@ cover/
 *.pot
 
 # Models
-*.keras
+models/
 
 # Django stuff:
 *.log
